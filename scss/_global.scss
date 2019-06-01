@@ -12,9 +12,9 @@ html {
 
 // Custom horizontal rules
 hr.divider {
-  max-width: 3.25rem;
+  max-width: 5.25rem;
   border-width: 0.2rem;
-  border-color: $primary;
+  border-color: darkgrey;
 }
 
 hr.light {
@@ -38,6 +38,10 @@ hr.light {
 // Page section padding
 .page-section {
   padding: 8rem 0;
+  &.dark{
+    background: $black;
+    color: white;
+  }
 }
 
 .primary-button{
