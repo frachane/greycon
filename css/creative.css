@@ -10611,6 +10611,23 @@ hr.light {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.carousel-item {
+  min-height: 220px;
+  padding: 40px 60px;
+  background: black;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .carousel-item {
+    padding: 30px 120px;
+  }
+}
+
+#carouselExampleIndicators {
+  margin-bottom: 20px;
+}
+
 #mainNav {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -10629,20 +10646,24 @@ hr.light {
   max-width: 150px;
 }
 
+#mainNav .navbar-toggler.navbar-toggler-right {
+  color: white;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   padding: 0.75rem 0 0.5rem;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #343a40;
+  color: #6c757d;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #343a40 !important;
+  color: #6c757d !important;
 }
 
 @media (min-width: 992px) {
@@ -10662,6 +10683,7 @@ hr.light {
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fff;
@@ -10680,11 +10702,8 @@ hr.light {
   #mainNav.navbar-scrolled .navbar-brand:hover {
     color: #343a40;
   }
-  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-    color: #fff;
-  }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #212529;
+    color: #fff;
   }
 }
 

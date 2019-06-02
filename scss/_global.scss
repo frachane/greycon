@@ -56,3 +56,20 @@ hr.light {
     background: rgba(0,0,0,0.5);
   }
 }
+
+.carousel-item{
+  min-height: 220px;
+  padding: 40px 60px;
+  background: black;
+  margin-bottom: 20px;
+}
+
+@include media-breakpoint-up(lg) {
+  .carousel-item{
+    padding: 30px 120px;
+  }
+}
+
+#carouselExampleIndicators{
+  margin-bottom: 20px;
+}

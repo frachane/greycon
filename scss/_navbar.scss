@@ -11,24 +11,28 @@
       max-width: 150px;
     }
   }
+  .navbar-toggler.navbar-toggler-right{
+    color: white;
+  }
   .navbar-nav {
     .nav-item {
       .nav-link {
         color: $gray-600;
         font-family: $font-family-sans-serif;
         font-weight: $font-weight-bold;
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         padding: 0.75rem 0 0.5rem;
         &:hover,
         &:active {
-          color: $primary;
+          color: $gray-600;
         }
         &.active {
-          color: $primary !important;
+          color: $gray-600 !important;
         }
       }
     }
   }
+
   @include media-breakpoint-up(lg) {
     // Base styling for the navbar - screen sizes greater than the large breakpoint
     box-shadow: none;
@@ -44,6 +48,7 @@
         padding: 0 1rem;
         .nav-link {
           color: fade-out($white, .3);
+          font-size: 0.9rem;
           &:hover {
             color: $white;
           }
@@ -68,9 +73,8 @@
       .navbar-nav {
         .nav-item {
           .nav-link {
-            color: $white;
             &:hover {
-              color: $gray-900;
+              color: $white;
             }
           }
         }
